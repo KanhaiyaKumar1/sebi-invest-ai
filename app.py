@@ -1,7 +1,6 @@
 import streamlit as st
 import requests
 import os
-from groq import Groq
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
