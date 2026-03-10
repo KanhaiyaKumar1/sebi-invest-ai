@@ -1,0 +1,18 @@
+# InvestAI — SEBI Investment Adviser
+
+## Local Chalane Ke Liye
+```
+pip install -r requirements.txt
+GROQ_API_KEY=your_key streamlit run app.py
+```
+
+## Render Par Deploy Karne Ke Liye
+1. GitHub par push karo
+2. Render.com par naya Web Service banao
+3. Environment variable mein GROQ_API_KEY add karo
+4. Deploy karo!
+
+## Test Users
+- kumar@sebi.com / password123
+- admin@sebi.com / admin123
+- viewer@sebi.com / viewer123
