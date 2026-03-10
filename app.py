@@ -294,7 +294,7 @@ USERS = {
 # ─── GROQ AI ───────────────────────────────────────────────────────────────────
 def ask_groq(user_message, history=[]):
     try:
-        client = Groq(api_key=GROQ_API_KEY)
+        pass
         messages = [{"role": "system", "content": SEBI_PROMPT}]
         for h in history[-6:]:
             messages.append(h)
