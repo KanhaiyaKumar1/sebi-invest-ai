@@ -117,8 +117,8 @@ def render_sidebar():
             u = st.session_state.user
             st.markdown(f'<div style="padding:1rem 1.5rem;border-bottom:1px solid #1a2332;"><div style="width:38px;height:38px;background:linear-gradient(135deg,#00d4aa,#00a88a);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:#080c10;font-size:1rem;margin-bottom:0.5rem;">{u["name"][0].upper()}</div><div style="font-size:15px;color:#e2e8f0;font-weight:500;">{u["name"]}</div><div style="font-size:13px;color:#4a6741;">{u["email"]}</div><div style="display:inline-block;margin-top:0.4rem;padding:0.15rem 0.6rem;background:#0a1a28;border:1px solid #1e2d3d;border-radius:3px;font-size:12px;color:#00d4aa;">{u["role"]}</div></div>', unsafe_allow_html=True)
 
-            for icon, label, key in [("Chat", "Chat", "chat"), ("Portfolio", "Portfolio", "portfolio"), ("SIP", "SIP Calculator", "sip")]:
-                if st.button(f"{icon} {label}", key=f"nav_{key}", use_container_width=True):
+            for icon, label, key in [("💬", "Chat", "chat"), ("📊", "Portfolio", "portfolio"), ("🧮", "SIP Calculator", "sip")]:
+                if st.button(f"{icon}  {label}", key=f"nav_{key}", use_container_width=True):
                     st.session_state.page = key
                     st.rerun()
 
